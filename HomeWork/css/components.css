@@ -1,0 +1,18 @@
+.my_btn {
+    border: transparent;
+    border-radius: 35px !important;
+    background-image: linear-gradient(to right, #1f357d, #04185b, #04185b, #1f357d);
+    background-color: #04185b;
+    transition: all 0.4s ease-in-out;
+    background-size: 300% 100%;
+    color: #fff !important;
+    padding: 0.875rem 2.188rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.my_btn:hover {
+    transition: all 0.4s ease-in-out;
+    color: #fff !important;
+    background-position: 100% 0;
+}
