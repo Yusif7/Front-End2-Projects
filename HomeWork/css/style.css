@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    color: #10266B !important;
 }
 
 img {
@@ -55,6 +56,27 @@ nav ul li a::after {
     background-position: center center;
 }
 
+.bg-counter {
+    background-image: url(../img/counter/counter-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-price {
+    background-image: url(../img/bg-price.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-team {
+    background-image: url(../img/team/expert-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 /* General styles */
 
@@ -64,6 +86,14 @@ nav ul li a::after {
 
 .c-10266B {
     color: #10266B;
+}
+
+.filter-box {
+    filter: drop-shadow(0 0 10px #eee);
+}
+
+.obj-contain {
+    object-fit: contain;
 }
 
 
@@ -93,8 +123,8 @@ nav ul li a::after {
         letter-spacing: 1px;
         font-weight: 600;
     }
-    .header-content span:nth-child(1),
-    span:nth-child(2) {
+    .header-content .digital,
+    .agency {
         font-size: 2.313rem;
         line-height: 3.25rem;
         letter-spacing: 2px;
@@ -103,17 +133,17 @@ nav ul li a::after {
         text-transform: uppercase;
         display: inline-block;
     }
-    .header-content span:nth-child(2) {
+    .header-content .agency {
         font-weight: 200;
     }
-    .header-content p {
+    .header-content .header-text {
         font-size: 1rem;
         line-height: 1.844rem;
         letter-spacing: 0px;
         color: #464545;
         font-weight: 300;
     }
-    .header-content p:hover {
+    .header-content .header-text:hover {
         text-decoration: underline;
     }
     .header-content figure {
@@ -181,14 +211,16 @@ nav ul li a::after {
         top: 80%;
         left: 20%;
     }
-    .about h3 {
+    .about .we,
+    .idea {
         font-size: 2.688rem;
         line-height: 3.75rem;
         letter-spacing: 0;
         color: #10266B;
         font-weight: 700;
     }
-    .about h3:hover {
+    .about .we:hover,
+    .idea:hover {
         text-decoration: underline;
     }
     .about p {
@@ -218,30 +250,30 @@ nav ul li a::after {
     .service .service-left-block .line {
         width: 20px;
         height: 2px;
-        background-color: darkblue;
+        background-color: #10266B;
         margin-bottom: 5px;
     }
-    .service .service-left-block h6 {
+    .service .service-left-block .our {
         line-height: 0.831rem;
         font-weight: 500;
         color: #10266B;
     }
-    .service .service-left-block h2,
-    span {
+    .service .service-left-block .service-we,
+    .service-span {
         font-size: 1.625rem;
         line-height: 1.994rem;
         color: #10266B;
         font-weight: 700;
     }
-    .service .service-left-block p {
+    .service .service-left-block .service-p {
         font-size: 0.875rem;
         color: #464545;
         line-height: 1.613rem;
     }
-    .service .service-left-block h6:hover,
-    h2:hover,
-    span:hover,
-    p:hover {
+    .service .service-left-block .ourh6:hover,
+    .service-we:hover,
+    .service-span:hover,
+    .service-p:hover {
         text-decoration: underline;
     }
     .service-right-block-design {
@@ -258,7 +290,7 @@ nav ul li a::after {
         color: #ffffff;
         transition: all 0.5s ease-in-out 0s;
     }
-    .service-right-block-design:hover h6,
+    .service-right-block-design:hover .service-h6,
     img {
         color: #ffffff;
     }
@@ -269,7 +301,7 @@ nav ul li a::after {
     .service-right-block-design figure img {
         object-fit: cover;
     }
-    .service-right-block-design h6 {
+    .service-right-block-design .service-right-h6 {
         line-height: 0.831rem;
         font-weight: 500;
         color: #10266B;
@@ -322,15 +354,162 @@ nav ul li a::after {
     .video-text h3:hover {
         text-decoration: underline;
     }
-    .video-text span {
+    .video-text .video-span {
         font-size: 0.813rem;
         line-height: 0.713rem;
         letter-spacing: 1px;
         color: #ffffff;
     }
+    .counter-content figure {
+        width: 68px;
+        height: 58px;
+        margin: auto;
+    }
+    .counter-content figure img {
+        object-fit: contain;
+    }
+    .counter-content .counter-count,
+    .counter-day {
+        letter-spacing: 0px;
+        display: block;
+    }
+    .counter-count {
+        font-size: 1.625rem;
+        line-height: 1.994rem;
+        font-weight: 500;
+    }
+    .counter-day {
+        line-height: 0.869rem;
+        font-weight: 300;
+    }
+    .counter .counter-mini-block {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .counter .counter-mini-block:hover {
+        filter: drop-shadow(0 0 10px #eee);
+        background-color: #ffffff;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .slider1 {
+        min-width: 348px;
+        height: 553px;
+        box-shadow: 2px 1px 10px 0 rgb(178 178 178 / 50%);
+        border-radius: 10px;
+    }
+    .slider-icon {
+        width: 55px;
+        height: 82px;
+        margin: auto;
+    }
+    .price-value {
+        font-size: 1.313rem;
+        line-height: 1.919rem;
+        letter-spacing: 0px;
+        color: #10266B;
+        font-weight: 700;
+    }
+    .price-describe {
+        font-size: 1.125rem;
+        line-height: 0.869rem;
+        color: #464545;
+        font-weight: 300;
+        display: block;
+        padding-top: 24px;
+    }
+    .price-dollar-icon,
+    .price-period {
+        line-height: 0.831rem;
+        font-weight: 500;
+    }
+    .price-dollar-value {
+        font-size: 3.438rem;
+        line-height: 2.863rem;
+        font-weight: 400;
+    }
+    .price-button {
+        background-color: #ffffff;
+        border: 2px solid #10266B;
+        background-image: none;
+        color: #10266B !important;
+    }
+    .price-button:hover {
+        background-color: #10266B;
+        color: #ffffff;
+    }
+    .slider-line .slider1 {
+        margin-left: 30px;
+    }
+    .slider-line .slider1:nth-child(1) {
+        margin-left: 0;
+    }
+    .team-line {
+        width: 20px;
+        height: 2px;
+        background-color: #10266B;
+        margin-bottom: 5px;
+    }
+    .mentor-block {
+        width: 279px;
+        height: 341px;
+    }
+    .mentor-photo {
+        width: 269px;
+        height: 269px;
+    }
+    .mentor-name {
+        line-height: 0.869rem;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .mentor-position {
+        font-size: 0.813rem;
+        line-height: 0.713rem;
+        letter-spacing: 0.5px;
+    }
+    .mentor-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #10266B;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in-out 0s;
+        border-radius: 10px;
+    }
+    .sosial-link {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transition: all 0.5s ease-in-out 0s;
+        text-decoration: none;
+    }
+    .mentor-block:hover .mentor-overlay {
+        opacity: 0.5;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .sosial-link:hover {
+        background-color: white;
+    }
     /* Width styling */
+    .w-70 {
+        width: 70%;
+    }
     .w-77 {
         width: 77%;
+    }
+    .w-90 {
+        width: 90%;
     }
     .w-95 {
         width: 95%;
