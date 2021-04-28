@@ -77,6 +77,13 @@ nav ul li a::after {
     background-position: center center;
 }
 
+.bg-clients {
+    background-image: url(../img/clients/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 /* General styles */
 
@@ -501,9 +508,86 @@ nav ul li a::after {
     .sosial-link:hover {
         background-color: white;
     }
+    .client-line {
+        width: 20px;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .clients-happy {
+        color: #ffffff;
+        line-height: 0.831rem;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .arrow {
+        width: 24px;
+        height: 20px;
+        cursor: pointer;
+        object-fit: contain;
+    }
+    .client-motivation,
+    .client-motivation2 {
+        font-size: 1.661rem;
+        list-style: 1.994rem;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+    .client-motivation2 {
+        color: rgb(255, 255, 255, 0.7);
+    }
+    .client-motivation:hover,
+    .client-motivation2:hover {
+        text-decoration: underline;
+    }
+    .card-block {
+        width: 350px;
+        min-width: 349px;
+        max-height: 351px;
+        height: 259px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-left: 30px;
+    }
+    .card-block:nth-child(1) {
+        margin-left: 0;
+    }
+    .client-photo {
+        border-radius: 50%;
+        width: 67px;
+        height: 67px;
+        margin-bottom: 0;
+    }
+    .client-name {
+        font-weight: 500;
+        color: rgb(70, 69, 69);
+        line-height: normal;
+    }
+    .client-position {
+        font-size: 0.813rem;
+        font-weight: 500;
+        line-height: normal;
+        color: rgb(16, 38, 107);
+    }
+    .client-comment {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.563rem;
+        color: rgb(156, 156, 156);
+        white-space: break-spaces;
+        padding-left: 5px;
+    }
     /* Width styling */
+    .w-13 {
+        width: 13%;
+    }
+    .w-45 {
+        width: 45%;
+    }
     .w-70 {
         width: 70%;
+    }
+    .w-80 {
+        width: 80%;
     }
     .w-77 {
         width: 77%;
