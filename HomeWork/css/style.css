@@ -41,6 +41,20 @@ nav ul li a::after {
     border-left: 2px solid #10266B;
 }
 
+.bg-service {
+    background-image: url(../img/services-backgrondpng.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-video {
+    background-image: url(../img/video/video-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 
 /* General styles */
 
@@ -193,6 +207,126 @@ nav ul li a::after {
         background: darkblue;
         float: left;
         margin-top: 24px;
+    }
+    .about a {
+        font-size: 0.875rem;
+        line-height: 1.406rem;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: 500;
+    }
+    .service .service-left-block .line {
+        width: 20px;
+        height: 2px;
+        background-color: darkblue;
+        margin-bottom: 5px;
+    }
+    .service .service-left-block h6 {
+        line-height: 0.831rem;
+        font-weight: 500;
+        color: #10266B;
+    }
+    .service .service-left-block h2,
+    span {
+        font-size: 1.625rem;
+        line-height: 1.994rem;
+        color: #10266B;
+        font-weight: 700;
+    }
+    .service .service-left-block p {
+        font-size: 0.875rem;
+        color: #464545;
+        line-height: 1.613rem;
+    }
+    .service .service-left-block h6:hover,
+    h2:hover,
+    span:hover,
+    p:hover {
+        text-decoration: underline;
+    }
+    .service-right-block-design {
+        width: 192px;
+        height: 212px;
+        background-color: #ffffff;
+        filter: drop-shadow(0 0 10px #eee);
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out 0s;
+        cursor: pointer;
+    }
+    .service-right-block-design:hover {
+        background-color: #10266B;
+        color: #ffffff;
+        transition: all 0.5s ease-in-out 0s;
+    }
+    .service-right-block-design:hover h6,
+    img {
+        color: #ffffff;
+    }
+    .service-right-block-design figure {
+        width: 63px;
+        height: 67px;
+    }
+    .service-right-block-design figure img {
+        object-fit: cover;
+    }
+    .service-right-block-design h6 {
+        line-height: 0.831rem;
+        font-weight: 500;
+        color: #10266B;
+    }
+    .video figure {
+        width: 635px;
+        height: 615px;
+    }
+    .video figure img:nth-child(2) {
+        position: absolute;
+        width: 76px;
+        height: 76px;
+        top: -25%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+    }
+    .video figure img:nth-child(3) {
+        position: absolute;
+        width: 86px;
+        height: 8px;
+        top: -5%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+    }
+    .video-text {
+        position: absolute;
+        width: 76px;
+        height: 76px;
+        top: 0%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        width: 70%;
+    }
+    .video-text h3 {
+        font-size: 1.813rem;
+        line-height: 2.556rem;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .video-text h3:hover {
+        text-decoration: underline;
+    }
+    .video-text span {
+        font-size: 0.813rem;
+        line-height: 0.713rem;
+        letter-spacing: 1px;
+        color: #ffffff;
     }
     /* Width styling */
     .w-77 {
