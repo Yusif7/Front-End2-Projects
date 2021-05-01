@@ -595,13 +595,17 @@ nav ul li a::after {
         text-decoration: underline;
     }
     .card-block {
-        width: 350px;
-        min-width: 349px;
+        max-width: 330px;
+        min-height: 250px;
         max-height: 351px;
         height: 259px;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         margin-left: 30px;
+    }
+    .swiper-button-prev {
+        left: 93% !important;
+        opacity: 1 !important;
     }
     .card-block:nth-child(1) {
         margin-left: 0;
@@ -644,7 +648,7 @@ nav ul li a::after {
         color: rgb(70, 69, 69);
     }
     .blog-card {
-        width: 364px;
+        width: 350px;
         height: 427px;
         border: 1px solid #f3f3f3;
         border-radius: 10px;
@@ -654,7 +658,7 @@ nav ul li a::after {
         background-color: white;
     }
     .blog-img {
-        width: 362px;
+        width: 350px;
         height: 200px;
     }
     .blog-date {

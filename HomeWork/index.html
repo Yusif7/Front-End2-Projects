@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -478,16 +479,16 @@
                                 <span class="d-block client-motivation2 ">Your Services</span>
                             </div>
                             <div>
-                                <img src="img/clients/left.png" alt="" class="arrow left-arrow">
-                                <img src="img/clients/right.png" alt="" class="arrow right-arrow ml-2">
+                                <img src="img/clients/left.png" alt="" class="arrow left-arrow swiper-button-prev ">
+                                <img src="img/clients/right.png" alt="" class="arrow right-arrow ml-2  swiper-button-next">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row pb-4">
-                    <div class="col-12 overflow-hidden">
-                        <div class="cardLine d-flex flex-nowrap">
-                            <div class="card-block">
+                    <div class="col-lg-12 overflow-hidden swiper-container mySwiper">
+                        <div class="cardLine swiper-wrapper">
+                            <div class="card-block swiper-slide">
                                 <div class="mt-4 mx-auto w-80 flex-column">
                                     <div class="d-flex align-items-center">
                                         <figure class="client-photo">
@@ -498,11 +499,10 @@
                                             <span class="d-block client-position">CEO,Therat</span>
                                         </div>
                                     </div>
-
                                     <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block swiper-slide">
                                 <div class="mt-4 mx-auto w-80 flex-column">
                                     <div class="d-flex align-items-center">
                                         <figure class="client-photo">
@@ -517,7 +517,7 @@
                                     <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block swiper-slide">
                                 <div class="mt-4 mx-auto w-80 flex-column">
                                     <div class="d-flex align-items-center">
                                         <figure class="client-photo">
@@ -532,7 +532,7 @@
                                     <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block swiper-slide">
                                 <div class="mt-4 mx-auto w-80 flex-column">
                                     <div class="d-flex align-items-center">
                                         <figure class="client-photo">
@@ -547,7 +547,52 @@
                                     <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
                                 </div>
                             </div>
-                            <div class="card-block">
+                            <div class="card-block swiper-slide">
+                                <div class="mt-4 mx-auto w-80 flex-column">
+                                    <div class="d-flex align-items-center">
+                                        <figure class="client-photo">
+                                            <img src="img/clients/1.png" alt="">
+                                        </figure>
+                                        <div class="ml-3">
+                                            <span class="d-block client-name">Kalan Motto</span>
+                                            <span class="d-block client-position">CEO,Therat</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
+                                </div>
+                            </div>
+                            <div class="card-block swiper-slide">
+                                <div class="mt-4 mx-auto w-80 flex-column">
+                                    <div class="d-flex align-items-center">
+                                        <figure class="client-photo">
+                                            <img src="img/clients/1.png" alt="">
+                                        </figure>
+                                        <div class="ml-3">
+                                            <span class="d-block client-name">Kalan Motto</span>
+                                            <span class="d-block client-position">CEO,Therat</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
+                                </div>
+                            </div>
+                            <div class="card-block swiper-slide">
+                                <div class="mt-4 mx-auto w-80 flex-column">
+                                    <div class="d-flex align-items-center">
+                                        <figure class="client-photo">
+                                            <img src="img/clients/2.png" alt="">
+                                        </figure>
+                                        <div class="ml-3">
+                                            <span class="d-block client-name">Kalan Motto</span>
+                                            <span class="d-block client-position">CEO,Therat</span>
+                                        </div>
+                                    </div>
+
+                                    <p class="client-comment pt-2">It goes without saying that customer data security and compliance is top of mind in most retail board rooms is top.</p>
+                                </div>
+                            </div>
+                            <div class="card-block swiper-slide">
                                 <div class="mt-4 mx-auto w-80 flex-column">
                                     <div class="d-flex align-items-center">
                                         <figure class="client-photo">
@@ -568,7 +613,7 @@
             </div>
         </section>
         <section class="blog bg-blog">
-            <div class="container overflow-hidden">
+            <div class="container overflow-hidden ">
                 <div class="row pt-5 text-center">
                     <div class="col-12">
                         <h4 class="blog-title">Latest Blog</h4>
@@ -576,9 +621,9 @@
                         <span class="blog-title-describe">Lorem Ipsum has been</span>
                     </div>
                 </div>
-                <div class="row flex-nowrap py-5">
-                    <div class="col-lg-4">
-                        <div class="blog-card">
+                <div class="row flex-nowrap py-5 swiper-container mx-auto">
+                    <div class="col-lg-12 swiper-wrapper">
+                        <div class="blog-card swiper-slide">
                             <figure class="blog-img">
                                 <img src="img/blog/blog-list-1.jpg" alt="" class="obj-contain">
                             </figure>
@@ -594,9 +639,119 @@
                                 <a href="#" class="blog-card-button">Read more</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog-card">
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-2.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-3.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-2.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-1.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-3.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-1.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
+                            <figure class="blog-img">
+                                <img src="img/blog/blog-list-3.jpg" alt="" class="obj-contain">
+                            </figure>
+                            <div class="d-flex align-items-center blog-date pt-2">
+                                <i class="far fa-clock ml-3 px-1"></i>
+                                <span class="ml-3 px-1">June 19, 2019</span>
+                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
+                            </div>
+                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                            </p>
+                            <div class="ml-3 px-1">
+                                <a href="#" class="blog-card-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="blog-card swiper-slide">
                             <figure class="blog-img">
                                 <img src="img/blog/blog-list-2.jpg" alt="" class="obj-contain">
                             </figure>
@@ -613,79 +768,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="blog-card">
-                            <figure class="blog-img">
-                                <img src="img/blog/blog-list-3.jpg" alt="" class="obj-contain">
-                            </figure>
-                            <div class="d-flex align-items-center blog-date pt-2">
-                                <i class="far fa-clock ml-3 px-1"></i>
-                                <span class="ml-3 px-1">June 19, 2019</span>
-                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
-                            </div>
-                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
-                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
-                            </p>
-                            <div class="ml-3 px-1">
-                                <a href="#" class="blog-card-button">Read more</a>
-                            </div>
+                    <div class="blog-card">
+                        <figure class="blog-img">
+                            <img src="img/blog/blog-list-2.jpg" alt="" class="obj-contain">
+                        </figure>
+                        <div class="d-flex align-items-center blog-date pt-2">
+                            <i class="far fa-clock ml-3 px-1"></i>
+                            <span class="ml-3 px-1">June 19, 2019</span>
+                            <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog-card">
-                            <figure class="blog-img">
-                                <img src="img/blog/blog-list-1.jpg" alt="" class="obj-contain">
-                            </figure>
-                            <div class="d-flex align-items-center blog-date pt-2">
-                                <i class="far fa-clock ml-3 px-1"></i>
-                                <span class="ml-3 px-1">June 19, 2019</span>
-                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
-                            </div>
-                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
-                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
-                            </p>
-                            <div class="ml-3 px-1">
-                                <a href="#" class="blog-card-button">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog-card">
-                            <figure class="blog-img">
-                                <img src="img/blog/blog-list-2.jpg" alt="" class="obj-contain">
-                            </figure>
-                            <div class="d-flex align-items-center blog-date pt-2">
-                                <i class="far fa-clock ml-3 px-1"></i>
-                                <span class="ml-3 px-1">June 19, 2019</span>
-                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
-                            </div>
-                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
-                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
-                            </p>
-                            <div class="ml-3 px-1">
-                                <a href="#" class="blog-card-button">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog-card">
-                            <figure class="blog-img">
-                                <img src="img/blog/blog-list-3.jpg" alt="" class="obj-contain">
-                            </figure>
-                            <div class="d-flex align-items-center blog-date pt-2">
-                                <i class="far fa-clock ml-3 px-1"></i>
-                                <span class="ml-3 px-1">June 19, 2019</span>
-                                <i class="fas fa-map-marker-alt ml-4 px-1"></i> <span class="ml-3 px-1">Phonics</span>
-                            </div>
-                            <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
-                            <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
-                            </p>
-                            <div class="ml-3 px-1">
-                                <a href="#" class="blog-card-button">Read more</a>
-                            </div>
+                        <h6 class="blog-card-title ml-3 px-1 pt-2">Twice profit than before you</h6>
+                        <p class="blog-card-mini-text ml-3 px-1 pr-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aspernatur pariatur expedita optio hic?Suscipit aspernatur pariatur expedita optio hic?
+                        </p>
+                        <div class="ml-3 px-1">
+                            <a href="#" class="blog-card-button">Read more</a>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -696,8 +796,6 @@
                     <figure class="footer-logo">
                         <img src="img/logoWhite.png" alt="" class="obj-contain">
                     </figure>
-
-
                 </div>
                 <div class="col-lg-2">
                     <h6 class="footer-title ">Services</h6>
@@ -771,6 +869,7 @@
     </footer>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
