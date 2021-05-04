@@ -1,0 +1,148 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Changa', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+/* Block Header */
+
+.header {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 835px;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    align-items: center;
+    padding: 40px 0px 0px 0px;
+}
+
+.header__logo {
+    width: 161px;
+    height: 50px;
+}
+
+.header__nav {
+    text-align: end;
+}
+
+.header__nav a {
+    display: inline-block;
+    text-align: center;
+    margin-right: 50px;
+    color: var(--white);
+    line-height: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 0.938rem;
+    position: relative;
+}
+
+.header__nav .header__nav__add_after::after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    border: solid var(--white);
+    border-width: 0 1px 1px 0;
+    padding: 2px;
+    transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
+.header__nav__icon {
+    color: var(--white);
+    transition: all 0.8s ease 0s;
+}
+
+.header__nav__icon:hover {
+    cursor: pointer;
+    color: #2FC42B;
+    transition: all 0.8s ease 0s;
+}
+
+.dropdown {
+    position: absolute;
+    width: 240px;
+    height: auto;
+    background-color: var(--white);
+}
+
+.header__nav__dropdown {
+    margin-top: 20px;
+    transform: translateY(25px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.header__nav__add_after:hover .header__nav__dropdown {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__nav__dropdown li {
+    cursor: pointer;
+    color: var(--black);
+    text-align: start;
+    padding: 12px 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+    transition: all 0.8s ease 0s;
+}
+
+.header__nav__dropdown li:first-child {
+    border-top: 3px solid var(--black);
+}
+
+.header__nav__dropdown li:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: all 0.8s ease 0s;
+}
+
+
+/* Block Header Complete */
