@@ -150,7 +150,7 @@ ul {
 
 /* Main Slider */
 
-#mainSlider {
+.mainSlider {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@ ul {
     height: 489px;
     position: absolute;
     top: 35%;
-    left: -11%;
+    left: -14%;
 }
 
 .mainSlider__content__textContent {
@@ -244,19 +244,19 @@ ul {
 .mainSlider__content__textContent__title {
     line-height: 35px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.563rem;
     display: block;
 }
 
 .mainSlider__content__textContent__theme {
     line-height: 77px;
-    font-weight: 700;
-    font-size: 70px;
+    font-weight: 500;
+    font-size: 4.375rem;
     display: block;
 }
 
 .mainSlider__content__textContent__info {
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: 300;
     line-height: 25px;
 }
@@ -268,7 +268,7 @@ ul {
     padding: 15px 38px;
     letter-spacing: 1px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.938rem;
     display: inline-block;
     background-color: var(--black);
     color: var(--white);
@@ -279,3 +279,76 @@ ul {
 .mainSlider__content__textContent__button:hover {
     background-color: #2fc42b;
 }
+
+
+/* Main Slider Comlete*/
+
+
+/* Seo Form */
+
+.seoForm__container {
+    padding: 70px 50px;
+}
+
+.seoForm__title {
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 1.4em;
+    color: #222222;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.seoForm__info {
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    color: #aaaaaa;
+    font-weight: 300;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.seoForm__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 227px;
+    grid-column-gap: 2rem;
+    grid-auto-rows: 50px;
+    width: 90%;
+    padding: 50px 0;
+    margin: auto;
+}
+
+.seoForm__form__input {
+    padding: 25px 30px;
+    background-color: #EDF7FF;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.8s ease 0s;
+}
+
+.seoForm__form__input:focus,
+.seoForm__form__input:active {
+    border: 1px solid #2fc42b;
+}
+
+.seoForm__form__button {
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.938rem;
+    background-color: #2F3340;
+    color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.8s ease 0s;
+}
+
+.seoForm__form__button:hover {
+    background-color: #2fc42b;
+    transition: all 0.8s ease 0s;
+}
+
+
+/* Seo Form Complete */
