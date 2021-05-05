@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@300;500;700&display=swap');
+.popins {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 *,
 ::before,
 ::after {
@@ -77,6 +83,7 @@ ul {
     font-weight: 500;
     font-size: 0.938rem;
     position: relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header__nav .header__nav__add_after::after {
@@ -246,6 +253,7 @@ ul {
     font-weight: 700;
     font-size: 1.563rem;
     display: block;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .mainSlider__content__textContent__theme {
@@ -253,6 +261,7 @@ ul {
     font-weight: 500;
     font-size: 4.375rem;
     display: block;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .mainSlider__content__textContent__info {
@@ -274,6 +283,7 @@ ul {
     color: var(--white);
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .mainSlider__content__textContent__button:hover {
@@ -297,6 +307,7 @@ ul {
     color: #222222;
     font-weight: 700;
     padding: 20px 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .seoForm__info {
@@ -343,6 +354,7 @@ ul {
     cursor: pointer;
     border: none;
     transition: all 0.8s ease 0s;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .seoForm__form__button:hover {
@@ -374,6 +386,7 @@ ul {
     font-weight: 700;
     line-height: 2.688rem;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .service__header--green {
@@ -410,6 +423,7 @@ ul {
     text-align: center;
     padding: 30px 5px;
     cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .service__type__read {
@@ -436,3 +450,53 @@ ul {
 .service__type__read:hover {
     color: #2fc42b;
 }
+
+
+/* Service Complete */
+
+.counter {
+    background-color: #2F3340;
+    height: 524px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 324px;
+    grid-gap: 0.5rem;
+}
+
+.counter__item {
+    background-color: #333743;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter__item__img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.counter__item__title {
+    font-size: 1.25rem;
+    line-height: 1.563rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+.counter__item__count {
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    font-weight: 800;
+    padding: 0px 10px;
+}
+
+
+/* Counter Complete */
