@@ -607,6 +607,7 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 374px;
     grid-gap: 1.5rem;
+    padding-top: 50px;
 }
 
 .gallery__header {
@@ -699,3 +700,93 @@ ul {
 
 
 /* Gallery complete */
+
+
+/* Marketing */
+
+.marketing {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marketing__container {
+    display: grid;
+    height: 577px;
+}
+
+.marketing__header {
+    font-size: 2.188rem;
+    line-height: 2.688rem;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.marketing__info {
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    font-weight: 300;
+    color: rgb(170, 170, 170);
+    width: 57%;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.marketing__header--green {
+    color: #2fc42b;
+}
+
+.marketing__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 164px;
+    padding-top: 50px;
+    grid-row-gap: 1rem;
+}
+
+.marketing_item {
+    padding: 30px;
+    display: flex;
+    transition: all 0.8s ease 0s;
+}
+
+.marketing_item:hover {
+    box-shadow: 5px 22px 21px rgb(234 234 234 / 75%);
+    transition: all 0.8s ease 0s;
+}
+
+.marketing__item__icon {
+    width: 80px;
+    height: 80px;
+}
+
+.marketing__item__info {
+    width: 76%;
+    padding-left: 15px;
+}
+
+.marketing__item__info__header {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--black);
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.marketing__item__info__header:hover {
+    color: rgb(47, 196, 43);
+    transition: all 0.8s ease 0s;
+}
+
+.marketing__item__info__text {
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.563rem;
+    color: rgb(170, 170, 170);
+    padding-top: 10px;
+}
