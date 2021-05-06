@@ -15,12 +15,16 @@
 :root {
     --white: #ffffff;
     --black: #000000;
+    --grey: rgb(170, 170, 170);
 }
 
 html,
 body {
     font-family: 'Changa', sans-serif;
-    color: var(--white);
+    font-size: 0.938rem;
+    font-weight: 300;
+    line-height: 1.563rem;
+    color: var(--grey);
 }
 
 .container {
@@ -70,6 +74,29 @@ ul {
 }
 
 
+/* Generak Style */
+
+h2 {
+    font-size: 2.188rem;
+    line-height: 2.688rem;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.header--green {
+    color: #2fc42b;
+}
+
+.d-block {
+    display: block;
+}
+
+
+/* General spacing */
+
+
 /* Block Header */
 
 .header {
@@ -99,10 +126,9 @@ ul {
     text-align: center;
     margin-right: 50px;
     color: var(--white);
-    line-height: 30px;
+    line-height: 1.875rem;
     text-transform: capitalize;
     font-weight: 500;
-    font-size: 0.938rem;
     position: relative;
     font-family: 'Poppins', sans-serif;
 }
@@ -270,7 +296,7 @@ ul {
 }
 
 .mainSlider__content__textContent__title {
-    line-height: 35px;
+    line-height: 2.188rem;
     font-weight: 700;
     font-size: 1.563rem;
     display: block;
@@ -278,27 +304,19 @@ ul {
 }
 
 .mainSlider__content__textContent__theme {
-    line-height: 77px;
+    line-height: 4.813rem;
     font-weight: 500;
     font-size: 4.375rem;
     display: block;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.mainSlider__content__textContent__info {
-    font-size: 0.938rem;
-    font-weight: 300;
-    line-height: 25px;
-}
-
 .mainSlider__content__textContent__button {
-    line-height: 24px;
     border-width: 2px;
     margin-top: 20px;
     padding: 15px 38px;
     letter-spacing: 1px;
     font-weight: 700;
-    font-size: 0.938rem;
     display: inline-block;
     background-color: var(--black);
     color: var(--white);
@@ -332,10 +350,6 @@ ul {
 }
 
 .seoForm__info {
-    font-size: 0.938rem;
-    line-height: 1.563rem;
-    color: #aaaaaa;
-    font-weight: 300;
     text-align: center;
     max-width: 80%;
     margin: auto;
@@ -368,7 +382,6 @@ ul {
 .seoForm__form__button {
     letter-spacing: 1px;
     font-weight: 700;
-    font-size: 0.938rem;
     background-color: #2F3340;
     color: var(--white);
     border-radius: 5px;
@@ -400,20 +413,6 @@ ul {
     height: 70%;
 }
 
-.service__header,
-.service__header--green {
-    color: #222222;
-    font-size: 2.188rem;
-    font-weight: 700;
-    line-height: 2.688rem;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.service__header--green {
-    color: #2fc42b;
-}
-
 .service__block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -439,7 +438,6 @@ ul {
 .service__type__title {
     font-size: 1.25rem;
     font-weight: 500;
-    line-height: 1.563rem;
     color: #333333;
     text-align: center;
     padding: 30px 5px;
@@ -448,10 +446,6 @@ ul {
 }
 
 .service__type__read {
-    font-size: 0.938rem;
-    line-height: 1.563rem;
-    font-weight: 300;
-    color: #aaaaaa;
     cursor: pointer;
 }
 
@@ -474,6 +468,9 @@ ul {
 
 
 /* Service Complete */
+
+
+/* Counter section */
 
 .counter {
     background-color: #2F3340;
@@ -506,7 +503,6 @@ ul {
 
 .counter__item__title {
     font-size: 1.25rem;
-    line-height: 1.563rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     padding: 0px 10px;
@@ -543,31 +539,14 @@ ul {
     height: 397px;
 }
 
-.trafic__content__info__title {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 2.188rem;
-    line-height: 2.688rem;
-    color: rgb(34, 34, 34);
-}
-
-.trafic__content__info__title--green {
-    color: #2fc42b;
-}
-
 .trafic__content__info__describe {
     font-size: 1.125rem;
-    line-height: 1.563rem;
-    font-weight: 300;
     color: rgb(51, 51, 51);
     margin-top: 40px;
 }
 
 .trafic__content__info__list {
-    font-size: 0.938rem;
     line-height: 1.488rem;
-    font-weight: 300;
-    color: rgb(170, 170, 170);
     margin-top: 25px;
     padding-left: 15px;
     position: relative;
@@ -608,19 +587,6 @@ ul {
     grid-auto-rows: 374px;
     grid-gap: 1.5rem;
     padding-top: 50px;
-}
-
-.gallery__header {
-    font-size: 2.188rem;
-    line-height: 2.688rem;
-    font-weight: 700;
-    color: rgb(34, 34, 34);
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-}
-
-.gallery__header--green {
-    color: #2fc42b;
 }
 
 .gallery_item {
@@ -716,28 +682,11 @@ ul {
     height: 577px;
 }
 
-.marketing__header {
-    font-size: 2.188rem;
-    line-height: 2.688rem;
-    font-weight: 700;
-    color: rgb(34, 34, 34);
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-}
-
 .marketing__info {
-    font-size: 0.938rem;
-    line-height: 1.563rem;
-    font-weight: 300;
-    color: rgb(170, 170, 170);
     width: 57%;
     text-align: center;
     margin: auto;
     padding-top: 30px;
-}
-
-.marketing__header--green {
-    color: #2fc42b;
 }
 
 .marketing__content {
@@ -784,9 +733,208 @@ ul {
 }
 
 .marketing__item__info__text {
-    font-size: 0.938rem;
-    font-weight: 300;
-    line-height: 1.563rem;
-    color: rgb(170, 170, 170);
     padding-top: 10px;
 }
+
+
+/* Marketing section is complete */
+
+.testimonial {
+    height: 552px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.testimonial__container {
+    height: 252px;
+}
+
+.testimonial__thumbs {
+    width: 126px;
+    height: 126px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonial__thumbs__img {
+    width: 58px;
+    height: 58px;
+    background-color: #444853;
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
+}
+
+.testimonial__thumbs__img:hover {
+    background-color: var(--white);
+    transform: scale(1.1);
+    transition: all 0.6s ease 0s;
+}
+
+.testimonial__content {
+    display: flex;
+}
+
+.testimonial__info {
+    padding-left: 30px;
+    position: relative;
+}
+
+.testimonial__info__text {
+    width: 915px;
+    font-size: 1.563rem;
+    font-weight: 200;
+    line-height: 2.188rem;
+    font-style: italic;
+    color: var(--white);
+    /* text-indent: 1.5rem; */
+    position: relative;
+}
+
+.testimonial__info__quote {
+    display: inline-block;
+    position: absolute;
+    top: -4px;
+    left: 30px;
+    font-size: 10px;
+    width: 9px;
+    height: 10px;
+}
+
+.testimonial__info__author {
+    margin-top: 40px;
+}
+
+.testimonial__info__author .author_name {
+    font-size: 1.563rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+    display: block;
+}
+
+.testimonial__info__author .author_position {
+    line-height: 1.5rem;
+    color: rgb(47, 196, 43);
+    display: block;
+    padding: 10px 0;
+}
+
+.testimonial__info__buttons {
+    position: absolute;
+    bottom: -28%;
+    left: 13%;
+}
+
+.testimonial__info__button {
+    color: white;
+    font-size: 45px;
+    display: inline-block;
+}
+
+
+/* Testimonial complete */
+
+.price {
+    height: 902px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price__container {
+    height: 662px;
+}
+
+.price__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
+
+.price__content__item {
+    background-color: #F8F8F8;
+}
+
+.price__content__img {
+    width: 336px;
+    height: 180px;
+    position: relative;
+    margin: auto;
+}
+
+.price__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.img_price {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -49px;
+    text-align: center;
+}
+
+.price__header {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: rgb(47, 196, 43);
+}
+
+.price__count {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    Line-height: 65px;
+    color: var(--white);
+}
+
+.price__content {
+    padding-top: 60px;
+}
+
+.price__content__text span {
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+}
+
+.price__content__text span:nth-child(3) {
+    color: rgb(47, 196, 43);
+}
+
+.price__button {
+    width: 161px;
+    height: 54px;
+    border: 2px solid #AAAAAA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #AAAAAA;
+    font-weight: 700;
+    transition: all 0.6s ease 0s;
+}
+
+.price__button:hover {
+    background-color: #2f3340;
+    border-color: #2f3340;
+    color: var(--white);
+    transition: all 0.6s ease 0s;
+}
+
+
+/* Price is complete */
