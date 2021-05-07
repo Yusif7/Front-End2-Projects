@@ -927,6 +927,7 @@ h2 {
     color: #AAAAAA;
     font-weight: 700;
     transition: all 0.6s ease 0s;
+    margin-bottom: 40px;
 }
 
 .price__button:hover {
@@ -938,3 +939,117 @@ h2 {
 
 
 /* Price is complete */
+
+
+/* Clients section */
+
+.brands {
+    background-color: #232732;
+    height: 350px;
+    width: auto;
+}
+
+
+/* .brands__content {
+    display: flex;
+} */
+
+.brand__info {
+    width: 450px;
+    height: 350px !important;
+    border-right: 1px solid #2F3340;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand__info img {
+    width: 380px !important;
+    height: 300px !important;
+}
+
+
+/* Brands section complete */
+
+.news {
+    height: 887px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF7FF;
+}
+
+.news__container {
+    height: 637px;
+}
+
+.news__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+    padding-top: 60px;
+}
+
+.news__content_info {
+    background-color: var(--white);
+}
+
+.news__content_info__describe {
+    display: flex;
+}
+
+.news__content_info__img {
+    width: 350px;
+    height: 317px;
+}
+
+.news__content_info__describe {
+    padding: 40px 30px;
+}
+
+.news__date {
+    border-right: 2px solid #777777;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.news__date--day {
+    font-size: 1.875rem;
+    line-height: 40px;
+    color: #2fc42b;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+}
+
+.news__dates--year {
+    color: #aaaaaa;
+    line-height: normal;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+}
+
+.news__mini__info {
+    max-width: 70%;
+    padding-left: 15px;
+}
+
+.news__mini__info__theme {
+    font-size: 0.875rem;
+    line-height: 24px;
+    color: #777777;
+}
+
+.news__mini__info__title {
+    font-size: 1.333rem;
+    line-height: 25px;
+    transition: all 0.6s ease 0s;
+    color: #333333;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.news__mini__info__title:hover {
+    color: #2fc42b;
+    transition: all 0.6s ease 0s;
+}
