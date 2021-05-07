@@ -25,6 +25,7 @@ body {
     font-weight: 300;
     line-height: 1.563rem;
     color: var(--grey);
+    overflow-x: hidden;
 }
 
 .container {
@@ -95,6 +96,10 @@ h2 {
 
 
 /* General spacing */
+
+.p-30 {
+    padding: 30px 50px 30px 0;
+}
 
 
 /* Block Header */
@@ -1052,4 +1057,131 @@ h2 {
 .news__mini__info__title:hover {
     color: #2fc42b;
     transition: all 0.6s ease 0s;
+}
+
+
+/* News complete */
+
+
+/* Footer setcion */
+
+.footer {
+    height: 491px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #252934;
+}
+
+.footer--container {
+    height: 416px;
+    padding-top: 50px;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    grid-column-gap: 40px;
+    align-items: flex-start;
+}
+
+.footer__content__contacts {
+    font-weight: 500;
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white);
+}
+
+.footer__content__block__title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.133rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 20px;
+}
+
+.footer__content__block:nth-child(2) {
+    padding-left: 20px;
+}
+
+.footer__content__block ul {
+    margin-top: 55px;
+}
+
+.footer__content__block ul li {
+    margin-bottom: 10px;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+}
+
+.footer__content__block ul li:hover {
+    color: #2fc42b;
+    transition: all 0.6s ease 0s;
+}
+
+.footer__form {
+    width: 320px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.footer__form input {
+    padding: 10px 20px;
+    background-color: #282D38;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+.footer__form input:focus {
+    outline: 1px solid #2fc42b;
+}
+
+.footer__form__input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(97, 100, 106);
+}
+
+.footer__form__button {
+    line-height: 26px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 7px 30px;
+    height: 100%;
+    color: var(--white);
+    background-color: #2fc42b;
+    border: none;
+    outline: none;
+    cursor: none;
+}
+
+.footer__form__button:hover {
+    border: 1px solid #2fc42b;
+    background-color: #252934;
+    color: #2fc42b;
+}
+
+.footer__icons {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer__icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: rgb(97, 100, 106);
+    ;
+}
+
+.footer__icons a:hover {
+    color: #2fc42b;
 }
