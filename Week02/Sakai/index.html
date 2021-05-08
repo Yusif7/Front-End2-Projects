@@ -37,26 +37,28 @@
         </div>
     </header>
     <main>
-        <section class="mainSlider" style="background-image: url(assets/header/image-1.jpg);">
+        <section class="mainSlider pos-rel" style="background-image: url(assets/header/image-1.jpg);">
             <div class="mainSlider__content">
                 <div class="mainSlider__content__img">
-                    <img src="assets/header/content-image-1.png" alt="clouds" class="mainSlider__content__img__clouds">
-                    <img src="assets/header/content-image-2.png" alt="pen" class="mainSlider__content__img__pen">
-                    <div class="mainSlider__content__button mainSlider__content__button-left"></div>
+                    <img src="assets/header/content-image-1.png" alt="clouds" class="mainSlider__content__img__clouds _anim">
+                    <img src="assets/header/content-image-2.png" alt="pen" class="mainSlider__content__img__pen _anim">
+
                 </div>
                 <div class="mainSlider__content__textContent">
                     <div class="mainSlider__content__textContent__items">
-                        <h3 class="mainSlider__content__textContent__title">Welcome to Sakai</h3>
-                        <span class="mainSlider__content__textContent__theme">Best SEO</span>
-                        <span class="mainSlider__content__textContent__theme">Solution Theme</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor</p>
-                        <a class="mainSlider__content__textContent__button">
+                        <h3 class="mainSlider__content__textContent__title _anim _noRepeat">Welcome to Sakai</h3>
+                        <span class="mainSlider__content__textContent__theme _anim _noRepeat">Best SEO</span>
+                        <span class="mainSlider__content__textContent__theme _anim _noRepeat">Solution Theme</span>
+                        <p class="header--anim_text _anim">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor</p>
+                        <a class="mainSlider__content__textContent__button _anim _noRepeat">
                             Know more
                         </a>
                     </div>
-                    <div class="mainSlider__content__button mainSlider__content__button-right"></div>
+
                 </div>
             </div>
+            <div class="mainSlider__content__button mainSlider__content__button-left"></div>
+            <div class="mainSlider__content__button mainSlider__content__button-right"></div>
         </section>
         <section class="seoForm">
             <div class="container seoForm__container">
@@ -73,7 +75,7 @@
             <div class="container service--container">
                 <h2>We’re California</h2>
                 <h2>Based SEO & <span class="header--green">Digital Marketing Agency</span></h2>
-                <div class="service__block">
+                <div class="service__block _anim">
                     <div class="service__type">
                         <img src="assets/services/service-1.png" alt="" class="service__type__img">
                         <h3 class="service__type__title">Expert Team & Quick <br> Support</h3>
@@ -132,7 +134,7 @@
             <div class="container ">
                 <div class="trafic__content">
                     <figure class="trafic__content__img">
-                        <img src="assets/trafic/image-1.png" alt="" class="obj-cover img_trafic">
+                        <img src="assets/trafic/image-1.png" alt="" class="obj-cover img_trafic _anim _noRepeat">
                     </figure>
                     <div class="trafic__content__info">
                         <h2>Our Full-work Web Solution Help your <span class="header--green">Business Grow!!</span></h2>
@@ -283,25 +285,43 @@
             <div class="container testimonial__container">
                 <div class="testimonial__content pos-rel ">
                     <div class="testimonial__thumbs">
-                        <div class="testimonial__thumbs__img">
+                        <div class="testimonial__thumbs__img dot">
                             <img src="assets/testimonial/testimonial-thumb-1.png" alt="" class="obj-contain">
                         </div>
-                        <div class="testimonial__thumbs__img">
+                        <div class="testimonial__thumbs__img dot">
                             <img src="assets/testimonial/testimonial-thumb-2.png" alt="" class="obj-contain">
                         </div>
-                        <div class="testimonial__thumbs__img">
+                        <div class="testimonial__thumbs__img dot">
                             <img src="assets/testimonial/testimonial-thumb-3.png" alt="" class="obj-contain">
                         </div>
-                        <div class="testimonial__thumbs__img">
+                        <div class="testimonial__thumbs__img dot">
                             <img src="assets/testimonial/testimonial-thumb-4.png" alt="" class="obj-contain">
                         </div>
                     </div>
                     <div class="testimonial__info ">
                         <div class="testimonial__info__text">
                             When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            <!-- <span class="testimonial__info__quote">
-                                <i class="fas fa-quote-left"></i>
-                            </span> -->
+                            <div class="testimonial__info__author">
+                                <span class="author_name">Thaliya cobb</span>
+                                <span class="author_position">Ui Designer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__info__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at, corrupti laudantium beatae mollitia facere quas dolorem quibusdam necessitatibus eos, enim deserunt magnam dignissimos natus, doloribus sapiente debitis fugiat? Inventore?
+                            <div class="testimonial__info__author">
+                                <span class="author_name">Thaliya cobb</span>
+                                <span class="author_position">Ui Designer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__info__text">
+                            Inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at, corrupti laudantium beatae mollitia facere quas dolorem quibusdam necessitatibus eos, enim deserunt magnam dignissimos natus, doloribus sapiente debitis fugiat? Inventore?
+                            <div class="testimonial__info__author">
+                                <span class="author_name">Thaliya cobb</span>
+                                <span class="author_position">Ui Designer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial__info__text">
+                            Fuga at, corrupti laudantium beatae mollitia facere quas dolorem quibusdam necessitatibus eos, enim deserunt magnam dignissimos natus, doloribus sapiente debitis fugiat? Inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             <div class="testimonial__info__author">
                                 <span class="author_name">Thaliya cobb</span>
                                 <span class="author_position">Ui Designer</span>
@@ -309,12 +329,12 @@
                         </div>
                     </div>
                     <div class="testimonial__info__buttons">
-                        <a href="" class="testimonial__info__button prev">
+                        <div href="#" class="testimonial__info__button prev">
                             <i class="fas fa-caret-left"></i>
-                        </a>
-                        <a href="" class="testimonial__info__button next">
+                        </div>
+                        <div class="testimonial__info__button next">
                             <i class="fas fa-caret-right"></i>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -519,6 +539,7 @@
             </div>
         </div>
     </footer>
+    <script src="script/jquery-3.6.0.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script/script.js">

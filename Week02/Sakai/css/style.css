@@ -118,6 +118,13 @@ h2 {
     padding: 40px 0px 0px 0px;
 }
 
+.header__container.fixed {
+    max-width: 100%;
+    position: fixed;
+    padding: 20px !important;
+    background-color: rgba(0, 0, 0);
+}
+
 .header__logo {
     width: 161px;
     height: 50px;
@@ -221,6 +228,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     height: 100%;
+    transition: all 0.8s ease 0s;
 }
 
 .mainSlider__content__button {
@@ -281,6 +289,14 @@ h2 {
     left: 0;
     width: 423px;
     height: 320px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 1s ease 1s;
+}
+
+.mainSlider__content__img__clouds._active {
+    transform: scaleX(1);
+    transition: all 1s ease 1s;
 }
 
 .mainSlider__content__img__pen {
@@ -289,6 +305,15 @@ h2 {
     position: absolute;
     top: 35%;
     left: -14%;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s ease 2s;
+}
+
+.mainSlider__content__img__pen._active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease 2s;
 }
 
 .mainSlider__content__textContent {
@@ -307,6 +332,15 @@ h2 {
     font-size: 1.563rem;
     display: block;
     font-family: 'Ubuntu', sans-serif;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s ease 1s;
+}
+
+.mainSlider__content__textContent__title._active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease 1s;
 }
 
 .mainSlider__content__textContent__theme {
@@ -315,6 +349,27 @@ h2 {
     font-size: 4.375rem;
     display: block;
     font-family: 'Ubuntu', sans-serif;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 1s ease 0.8s;
+}
+
+.mainSlider__content__textContent__theme._active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease 0.8s;
+}
+
+.header--anim_text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s ease 1s;
+}
+
+.header--anim_text._active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease 1s;
 }
 
 .mainSlider__content__textContent__button {
@@ -329,6 +384,14 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Ubuntu', sans-serif;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 1s ease 1s;
+}
+
+.mainSlider__content__textContent__button._active {
+    transform: scaleX(1);
+    transition: all 1s ease 1s;
 }
 
 .mainSlider__content__textContent__button:hover {
@@ -425,6 +488,15 @@ h2 {
     grid-auto-rows: 348px;
     grid-gap: 4rem;
     padding-top: 70px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.6s ease 0s;
+}
+
+.service__block._active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.6s ease 0s;
 }
 
 .service__type {
@@ -543,6 +615,18 @@ h2 {
 .trafic__content__img {
     width: 500px;
     height: 397px;
+}
+
+.img_trafic {
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.img_trafic._active {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 1s ease 0s;
 }
 
 .trafic__content__info__describe {
@@ -798,6 +882,7 @@ h2 {
     color: var(--white);
     /* text-indent: 1.5rem; */
     position: relative;
+    display: none;
 }
 
 .testimonial__info__quote {
@@ -839,6 +924,23 @@ h2 {
     color: white;
     font-size: 45px;
     display: inline-block;
+    cursor: pointer;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
