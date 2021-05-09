@@ -160,3 +160,5 @@ document.querySelectorAll('.mainSlider__content__button')[0].addEventListener('c
 document.querySelector('.burger').addEventListener('click', () => {
     document.querySelector('.header__nav').classList.toggle('resp');
 })
+
+/* hover efeck dropdown */
