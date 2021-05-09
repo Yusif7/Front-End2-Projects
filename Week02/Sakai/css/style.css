@@ -113,7 +113,7 @@ h2 {
 
 .header__container {
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 2fr 4fr 30px;
     align-items: center;
     padding: 40px 0px 0px 0px;
 }
@@ -209,6 +209,25 @@ h2 {
     background-color: var(--black);
     color: var(--white);
     transition: all 0.8s ease 0s;
+}
+
+.responsive_arrow {
+    display: none;
+}
+
+.burger {
+    background-color: green;
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+
+.burger .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 

@@ -4,6 +4,7 @@
     .header__container {
         padding: 20px !important;
         background-color: rgba(0, 0, 0);
+        position: relative;
     }
     .mainSlider__content__img__pen {
         display: none;
@@ -28,9 +29,49 @@
     .marketing__content {
         grid-template-columns: repeat(2, 1fr) !important;
     }
+    .header__nav__icon {
+        display: none;
+    }
+    .header__nav a {
+        margin-right: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 992px) {
+    .burger {
+        display: block !important;
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+    }
+    .header__nav {
+        position: absolute;
+        top: 15vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        padding: 20px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.8s ease 0s;
+    }
+    .header__nav.resp {
+        transform: scaleY(1);
+        transition: all 0.8s ease 0s;
+    }
+    .header__nav a {
+        width: 100% !important;
+        margin: auto !important;
+        border: 1px solid !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+    .responsive_arrow {
+        display: block !important;
+    }
     .mainSlider__content__img__clouds {
         display: none;
     }

@@ -154,3 +154,9 @@ document.querySelectorAll('.mainSlider__content__button')[0].addEventListener('c
     }, 700);
 
 })
+
+/* Burger menu */
+
+document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelector('.header__nav').classList.toggle('resp');
+})
