@@ -91,17 +91,12 @@ h3 {
     width: 138px;
     border: 10px solid rgba(204, 241, 255, 0.5);
     position: absolute;
-    top: 65%;
+    top: 44%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     color: var(--white)
-}
-
-.arrows:hover {
-    text-decoration: none !important;
-    color: var(--white);
 }
 
 .leftArrow {
@@ -116,9 +111,11 @@ h3 {
     border-right: 0px;
 }
 
-.my--btn:hover {
+.my--btn:hover,
+.arrows:hover {
     background-position: right center;
     color: var(--white);
+    text-decoration: none !important;
 }
 
 img {
