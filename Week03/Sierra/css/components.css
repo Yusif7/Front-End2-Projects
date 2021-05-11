@@ -66,19 +66,54 @@ h3 {
     line-height: 16.8px;
 }
 
+.my--btn,
+.arrows {
+    transition: all 400ms ease-out;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+
 .my--btn {
     padding: 0px 46px;
     background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
-    background-size: 200% auto;
     z-index: 2;
     display: inline-block;
-    transition: all 400ms ease-out;
     text-align: center;
     color: var(--white);
     line-height: 55px;
     border: 6px solid rgba(204, 241, 255, 0.5);
     border-radius: 33px;
-    cursor: pointer;
+}
+
+.arrows {
+    height: 120px;
+    background-image: linear-gradient(to right, #70bafe 0%, #998dff 51%, #70bafe 100%);
+    width: 138px;
+    border: 10px solid rgba(204, 241, 255, 0.5);
+    position: absolute;
+    top: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--white)
+}
+
+.arrows:hover {
+    text-decoration: none !important;
+    color: var(--white);
+}
+
+.leftArrow {
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    border-left: 0px;
+}
+
+.rightArrow {
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    border-right: 0px;
 }
 
 .my--btn:hover {

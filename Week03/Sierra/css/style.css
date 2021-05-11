@@ -74,4 +74,44 @@ body {
 
 .mainSlider {
     height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mainSlider__container__content {
+    display: flex;
+    position: relative;
+    height: 90%;
+    top: 10%;
+}
+
+.mainSlider__left {
+    top: 35%;
+    left: 5%;
+}
+
+.mainSlider__right {
+    top: 12%;
+    right: 5%;
+}
+
+.mainSlider__left__miniTitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 36px;
+    display: block;
+}
+
+.mainSlider__right__img {
+    width: 485px;
+    height: 773px;
+}
+
+.leftArrow {
+    left: 0;
+}
+
+.rightArrow {
+    right: 0;
 }
