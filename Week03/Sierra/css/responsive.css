@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 992px) {
+    .header {
+        height: 70px !important;
+        padding: 0px 30px !important;
+    }
+    .header__nav ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        overflow: auto;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all 0.6s ease 0s;
+    }
+    .header__nav ul li {
+        margin-left: 0px !important;
+        padding: 10px 15px;
+        border-bottom: 1px solid #090909;
+    }
+    .burger {
+        display: block !important;
+    }
+    .header__nav ul li .header__nav__menu:hover {
+        color: #97CCFE !important;
+    }
+    .header__nav ul li .header__nav__menu._active {
+        color: #97CCFE !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {}
