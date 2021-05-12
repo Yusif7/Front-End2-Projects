@@ -24,6 +24,7 @@ body {
     left: 0;
     top: 0;
     padding: 0px 60px;
+    z-index: 100;
 }
 
 .header__nav {
@@ -135,4 +136,41 @@ body {
     transform: scale(2);
     background-color: #97cdfe;
     transition: all 0.6s ease 0s;
+}
+
+
+/* mainSlider Complete */
+
+
+/* Marketing  */
+
+.marketing {
+    height: 770px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.marketing__item {
+    width: 350px;
+    height: 495px;
+}
+
+.marketing__item:hover {
+    box-shadow: 0px 14px 38px 0px rgb(0 0 0 / 11%);
+    transition: all 0.6s ease 0s;
+}
+
+.marketing_item_icon {
+    width: 92px;
+    height: 73px;
+    margin: auto;
+}
+
+.marketing_item_btn {
+    opacity: 0;
+}
+
+.marketing__item:hover .marketing_item_btn {
+    opacity: 1;
 }
