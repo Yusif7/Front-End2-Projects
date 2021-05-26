@@ -6,8 +6,8 @@
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -78,7 +78,8 @@ ul {
 
 /* Generak Style */
 
-h2 {
+h2,
+.h2 {
     font-size: 2.188rem;
     line-height: 2.688rem;
     font-weight: 700;

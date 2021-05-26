@@ -8,8 +8,23 @@
         margin-left: -295px;
         padding: 0px 30px !important;
     }
-    .marketing {
+    .marketing,
+    .about,
+    .about__testimonials {
         height: auto !important;
+    }
+    .about__testimonials {
+        background: none !important;
+    }
+    .testimonial_dots {
+        bottom: 18% !important;
+    }
+    .testimonial_dots>.dot {
+        background-color: var(--darkblue) !important;
+    }
+    .team__photos>.team__photo {
+        margin: 5px !important;
+        max-width: 215px !important;
     }
 }
 
@@ -30,7 +45,6 @@
         overflow: auto;
         transform: scaleY(0);
         transform-origin: top;
-        transition: all 0.6s ease 0s;
     }
     .header__nav ul li {
         margin-left: 0px !important;
@@ -66,6 +80,20 @@
     .dots {
         display: none;
     }
+    .team__describe {
+        width: 60% !important;
+        margin: auto !important;
+    }
+    .team__text {
+        padding-bottom: 10px !important;
+    }
+    .team__photos {
+        width: 65% !important;
+        margin: auto !important;
+    }
+    .team__photo {
+        min-width: 237px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -86,6 +114,9 @@
         width: 240px !important;
         height: 530px !important;
     }
+    .iphone {
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -103,5 +134,9 @@
         margin: auto;
         width: 60% !important;
         height: 500px !important;
+    }
+    .about__testimonials,
+    .about__text {
+        padding-left: 20px;
     }
 }

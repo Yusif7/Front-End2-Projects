@@ -1,0 +1,182 @@
+/* 
+1.Title
+2.Logo,nav
+3.General text
+4.Btn
+5.Article
+6.Footer text
+7.Section bg
+*/
+
+:root {
+    --black: #000000;
+    --revolver: #1f1534;
+    --topaz: #7D7987;
+    --blue: #458FF6;
+    --indigo: #3772C5;
+    --lilac: #F9FAFD;
+    --section__bg: #5C9EF3;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Mulish', apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--topaz);
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--revolver);
+}
+
+.title {
+    font-size: 3.3rem;
+    line-height: inherit;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.btn {
+    border: 1px solid var(--blue);
+    background-color: transparent;
+    border-radius: 35px;
+    padding: 10px 30px;
+    color: var(--blue);
+    cursor: pointer;
+    display: inline-block;
+    line-height: inherit;
+}
+
+
+/* Header */
+
+.header {
+    background-color: var(--white);
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.header__menu {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo--space {
+    margin-left: 15px;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav>.nav__link:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav>.nav__link.active {
+    color: var(--revolver);
+    font-weight: 700;
+}
+
+.nav>.nav__link:hover {
+    color: var(--revolver);
+}
+
+
+/* Intro section */
+
+.intro {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.intro__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 40px;
+    padding-top: 50px;
+}
+
+.intro__right {
+    width: 80%;
+}
+
+.intro__title {
+    font-size: 4.8rem;
+    line-height: 1;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.intro__text {
+    font-size: 1.9rem;
+    color: var(--topaz);
+    line-height: 1.5;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+.intro__btn {
+    color: var(--white);
+    background-color: var(--blue);
+    transition: transform 0.6s ease-in-out 0s;
+}
+
+.intro__btn:hover {
+    transform: translateY(-5px);
+}
+
+.intro__photo {
+    width: 538px;
+}
+
+.intro__dots {
+    position: absolute;
+    top: 18%;
+    left: 0;
+}
