@@ -1,0 +1,42 @@
+@import '../helpers/helpers';
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $ff-lato, $ff-style;
+    font-weight: $fw-reg;
+    font-size: $fs-sm;
+    @include lh_pxToNum(16, 26);
+    color: $color-base;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}

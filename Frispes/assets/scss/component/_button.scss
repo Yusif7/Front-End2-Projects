@@ -1,0 +1,10 @@
+.btn {
+    padding: $p;
+    background-color: $color-secondary;
+    color: $color-base;
+    box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

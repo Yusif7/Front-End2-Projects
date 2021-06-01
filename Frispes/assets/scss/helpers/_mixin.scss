@@ -1,0 +1,3 @@
+@mixin lh_pxToNum($fs, $lh) {
+    line-height: $lh/$fs;
+}
