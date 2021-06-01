@@ -1,0 +1,25 @@
+@import '../helpers/helpers';
+.uptitle,
+.text {
+    font-size: $fs-lg;
+    @include lh_pxToNum(20, 30);
+    font-weight: $fw-med;
+    color: $color-ntrl-dk;
+}
+
+.uptitle {
+    position: relative;
+    color: $color-black-lt;
+    display: inline-block;
+}
+
+.uptitle::after {
+    content: '';
+    position: absolute;
+    right: -80%;
+    top: 50%;
+    width: 73px;
+    height: 2px;
+    background-color: $color-black-lt;
+    margin-top: 2px;
+}

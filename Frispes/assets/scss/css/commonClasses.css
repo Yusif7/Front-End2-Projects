@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lato:wght@400;700&family=Lora:wght@400;700&family=Poppins:wght@500;600&family=Roboto&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+.uptitle,
+.text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #6A6A6A;
+}
+
+.uptitle {
+  position: relative;
+  color: #222831;
+  display: inline-block;
+}
+
+.uptitle::after {
+  content: '';
+  position: absolute;
+  right: -80%;
+  top: 50%;
+  width: 73px;
+  height: 2px;
+  background-color: #222831;
+  margin-top: 2px;
+}

@@ -2,7 +2,7 @@
     margin-top: 60px;
     &__content {
         display: grid;
-        grid-template-columns: 1fr 4fr 195px;
+        grid-template-columns: 1fr 4fr 1fr;
         align-items: center;
     }
     &__logo {
@@ -31,7 +31,7 @@
             @include lh_pxToNum(16, 19)
         }
         &-btn {
-            padding: 12px 24px;
+            padding: 12px 22px;
             background-color: $color-base;
             box-shadow: none;
             transition: all 0.6s ease 0s;

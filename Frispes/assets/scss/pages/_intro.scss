@@ -1,0 +1,88 @@
+.intro {
+    padding-top: 60px;
+    position: relative;
+    &__header {
+        display: flex;
+    }
+    &__title {
+        font-family: $ff-lora;
+        font-weight: $fw-bold;
+        font-size: $fs-h1;
+        @include lh_pxToNum(52, 67);
+        color: $color-primary;
+        width: 200%;
+        margin: 0;
+    }
+    &__text {
+        margin: 0;
+        margin-top: 10px;
+        padding-left: 25px;
+    }
+    &__photo {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 940px;
+        height: 598px;
+        z-index: 1;
+    }
+    &__form {
+        padding: 42px 40px 30px 40px;
+        background-color: $color-primary;
+        display: inline-block;
+        position: absolute;
+        top: 123%;
+        z-index: 1;
+        &__title {
+            font-family: $ff-lora;
+            font-weight: $fw-bold;
+            font-size: $fs-ftitle;
+            @include lh_pxToNum(34, 44);
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        select {
+            width: 100%;
+            background: none;
+            outline: none;
+            appearance: none;
+            font-family: $ff-lato;
+            font-weight: $fw-med;
+            font-size: $fs-sm;
+            @include lh_pxToNum(16, 26);
+            color: $color-base;
+            padding: 34px 16px 8px 16px;
+            option {
+                background-color: $color-primary;
+            }
+        }
+        .select {
+            position: relative;
+            margin-top: 17px;
+            &::after {
+                content: '';
+                display: inline-block;
+                background-image: url(/Frispes/assets/files/intro/down.png);
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                margin-top: -12px;
+                pointer-events: none;
+            }
+            &__placeholder {
+                position: absolute;
+                top: 10%;
+                left: 16px;
+                opacity: 0.35;
+            }
+        }
+        &__btn {
+            font-weight: $fw-bold;
+            font-size: $fs-md;
+            @include lh_pxToNum(18, 28);
+            margin-top: 20px;
+        }
+    }
+}
