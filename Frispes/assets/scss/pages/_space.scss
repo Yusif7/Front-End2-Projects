@@ -1,0 +1,148 @@
+.spaces {
+    margin-top: 68px;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    &__header {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 60px;
+        &__title {
+            flex: 0 0 25%;
+        }
+        &__text {
+            flex: 0 0 50%;
+            padding-left: $pl-100;
+        }
+        &__arrows {
+            flex: 0 0 25%;
+            padding-left: $pl-100;
+        }
+        .arrow {
+            width: 52.69px;
+            height: 26.05px;
+            transform: scaleX(2);
+            fill: $color-ntrl;
+            transition: all 0.6s ease 0s;
+            cursor: pointer;
+            &:hover {
+                transform: scaleX(3.5);
+                fill: $color-secondary;
+            }
+        }
+        .arrowR {
+            transform: scaleX(2) rotate(180deg);
+            &:hover {
+                transform: scaleX(3.5) rotate(180deg);
+                fill: $color-secondary;
+            }
+        }
+    }
+    .spaces__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 50px;
+        .spaces__item {
+            text-align: center;
+            position: relative;
+            &__photo {
+                margin: 0;
+                position: relative;
+                &__link {
+                    width: 72px;
+                    height: 72px;
+                    background-color: $color-secondary;
+                    position: absolute;
+                    bottom: 59px;
+                    left: 0;
+                    &::after {
+                        content: '';
+                        @include bg_img('/Frispes/assets/files/spaces/right.png', contain);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        margin: -16px -16px;
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+            &__title {
+                font-weight: $fw-bold;
+                font-size: $fs-lg;
+                @include lh_pxToNum(20, 24);
+                color: $color-black-lt;
+                margin-top: 25px;
+                display: inline-block;
+            }
+            &__overlay {
+                background-color: $color-primary;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.6s ease 0s;
+                &__title {
+                    font-family: $ff-lora;
+                    font-size: $fs-h3;
+                    @include lh_pxToNum(32, 41);
+                    font-weight: $fw-reg;
+                    margin: 0;
+                    margin-bottom: 15px;
+                }
+                &__text {
+                    color: $color-base;
+                    padding: 0 60px;
+                    margin: 0;
+                }
+                &__link {
+                    position: absolute;
+                    background-color: $color-secondary;
+                    padding: 25px 80px 25px 55px;
+                    left: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                    &::after {
+                        content: '';
+                        @include bg_img('/Frispes/assets/files/spaces/right.png', contain);
+                        position: absolute;
+                        top: 50%;
+                        right: 10%;
+                        margin: -16px -16px;
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+            &:hover .spaces__item__overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    &__line {
+        width: 160px;
+        height: 4px;
+        background-color: $color-ntrl-dk;
+        margin: auto;
+        position: relative;
+        margin-bottom: 7px;
+        &::before {
+            content: '';
+            width: 40px;
+            height: 4px;
+            background-color: $color-secondary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__count {
+        text-align: center;
+        & span.active {
+            color: $color-black-lt;
+        }
+    }
+}

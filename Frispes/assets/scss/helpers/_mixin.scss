@@ -1,3 +1,10 @@
 @mixin lh_pxToNum($fs, $lh) {
     line-height: $lh/$fs;
 }
+
+@mixin bg_img($url, $bg_s:cover, $bg_p:center, $bg_r:no-repeat) {
+    background-image: url($url);
+    background-size: $bg_s;
+    background-position: $bg_p;
+    background-repeat: $bg_r;
+}

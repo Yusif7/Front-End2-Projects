@@ -20,19 +20,17 @@
     }
     &__photo {
         position: absolute;
-        top: 100%;
+        top: 35%;
         right: 0;
         width: 940px;
         height: 598px;
-        z-index: 1;
+        z-index: -1;
     }
     &__form {
         padding: 42px 40px 30px 40px;
         background-color: $color-primary;
         display: inline-block;
-        position: absolute;
-        top: 123%;
-        z-index: 1;
+        margin-top: 65px;
         &__title {
             font-family: $ff-lora;
             font-weight: $fw-bold;

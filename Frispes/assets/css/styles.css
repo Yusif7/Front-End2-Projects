@@ -372,6 +372,30 @@ template {
   margin-top: 2px;
 }
 
+.title {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.3;
+  color: #10375C;
+  margin: 0;
+}
+
+.text_secondary {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.55556;
+  color: #9A9A9A;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 html {
   font-size: 10px;
   -webkit-box-sizing: border-box;
@@ -530,20 +554,18 @@ ul {
 
 .intro__photo {
   position: absolute;
-  top: 100%;
+  top: 35%;
   right: 0;
   width: 940px;
   height: 598px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .intro__form {
   padding: 42px 40px 30px 40px;
   background-color: #10375C;
   display: inline-block;
-  position: absolute;
-  top: 123%;
-  z-index: 1;
+  margin-top: 65px;
 }
 
 .intro__form__title {
@@ -604,4 +626,208 @@ ul {
   font-size: 1.8rem;
   line-height: 1.55556;
   margin-top: 20px;
+}
+
+.spaces {
+  margin-top: 68px;
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
+.spaces__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.spaces__header__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.spaces__header__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-left: 100px;
+}
+
+.spaces__header__arrows {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding-left: 100px;
+}
+
+.spaces__header .arrow {
+  width: 52.69px;
+  height: 26.05px;
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+  fill: #9A9A9A;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  cursor: pointer;
+}
+
+.spaces__header .arrow:hover {
+  -webkit-transform: scaleX(3.5);
+          transform: scaleX(3.5);
+  fill: #FF5722;
+}
+
+.spaces__header .arrowR {
+  -webkit-transform: scaleX(2) rotate(180deg);
+          transform: scaleX(2) rotate(180deg);
+}
+
+.spaces__header .arrowR:hover {
+  -webkit-transform: scaleX(3.5) rotate(180deg);
+          transform: scaleX(3.5) rotate(180deg);
+  fill: #FF5722;
+}
+
+.spaces .spaces__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.spaces .spaces__content .spaces__item {
+  text-align: center;
+  position: relative;
+}
+
+.spaces .spaces__content .spaces__item__photo {
+  margin: 0;
+  position: relative;
+}
+
+.spaces .spaces__content .spaces__item__photo__link {
+  width: 72px;
+  height: 72px;
+  background-color: #FF5722;
+  position: absolute;
+  bottom: 59px;
+  left: 0;
+}
+
+.spaces .spaces__content .spaces__item__photo__link::after {
+  content: '';
+  background-image: url("/Frispes/assets/files/spaces/right.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px -16px;
+  width: 32px;
+  height: 32px;
+}
+
+.spaces .spaces__content .spaces__item__title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #222831;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.spaces .spaces__content .spaces__item__overlay {
+  background-color: #10375C;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.spaces .spaces__content .spaces__item__overlay__title {
+  font-family: "Lora";
+  font-size: 3.2rem;
+  line-height: 1.28125;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.spaces .spaces__content .spaces__item__overlay__text {
+  color: #ffffff;
+  padding: 0 60px;
+  margin: 0;
+}
+
+.spaces .spaces__content .spaces__item__overlay__link {
+  position: absolute;
+  background-color: #FF5722;
+  padding: 25px 80px 25px 55px;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.spaces .spaces__content .spaces__item__overlay__link::after {
+  content: '';
+  background-image: url("/Frispes/assets/files/spaces/right.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  margin: -16px -16px;
+  width: 32px;
+  height: 32px;
+}
+
+.spaces .spaces__content .spaces__item:hover .spaces__item__overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.spaces__line {
+  width: 160px;
+  height: 4px;
+  background-color: #6A6A6A;
+  margin: auto;
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.spaces__line::before {
+  content: '';
+  width: 40px;
+  height: 4px;
+  background-color: #FF5722;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.spaces__count {
+  text-align: center;
+}
+
+.spaces__count span.active {
+  color: #222831;
 }
