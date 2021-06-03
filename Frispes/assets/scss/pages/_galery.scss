@@ -1,0 +1,50 @@
+.galery {
+    padding: 30px 0;
+    overflow: hidden;
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 40px;
+    }
+    &__title {
+        margin: 10px 0 30px 0;
+    }
+    &__header {
+        width: 45%;
+        padding-left: 30px;
+        &__arrows {
+            padding-left: 30px;
+        }
+        .arrow {
+            width: 52.69px;
+            height: 26.05px;
+            transform: scaleX(2);
+            fill: $color-ntrl;
+            transition: all 0.6s ease 0s;
+            cursor: pointer;
+            &:hover {
+                transform: scaleX(3.5);
+                fill: $color-secondary;
+            }
+        }
+        .arrowR {
+            transform: scaleX(2) rotate(180deg);
+            &:hover {
+                transform: scaleX(3.5) rotate(180deg);
+                fill: $color-secondary;
+            }
+        }
+    }
+    &__slider {
+        display: flex;
+        align-items: center;
+        &__item {
+            flex-basis: 350px;
+            margin-right: 30px;
+            &:nth-child(2) {
+                transform-origin: bottom;
+                transform: scaleY(1.83);
+            }
+        }
+    }
+}
