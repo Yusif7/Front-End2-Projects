@@ -33,6 +33,13 @@
     margin: 0;
 }
 
+.title_secondary {
+    font-family: $ff-lora;
+    font-size: $fs-h3;
+    @include lh_pxToNum(32, 41);
+    font-weight: $fw-reg;
+}
+
 .text_secondary {
     font-weight: $fw-med;
     font-size: $fs-md;

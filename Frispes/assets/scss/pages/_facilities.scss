@@ -1,0 +1,31 @@
+.facilities {
+    padding: $section-pad;
+    &__header {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+    &__content {
+        padding-left: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        padding-right: 50px;
+        &__item {
+            font-size: $fs-lg;
+            @include lh_pxToNum(20, 24);
+            font-weight: $fw-bold;
+            color: $color-black-lt;
+            padding: 24px;
+            transition: $transition;
+            cursor: pointer;
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-base;
+            }
+        }
+    }
+}

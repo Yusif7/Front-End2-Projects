@@ -85,10 +85,10 @@
                 visibility: hidden;
                 transition: all 0.6s ease 0s;
                 &__title {
-                    font-family: $ff-lora;
+                    /* font-family: $ff-lora;
                     font-size: $fs-h3;
                     @include lh_pxToNum(32, 41);
-                    font-weight: $fw-reg;
+                    font-weight: $fw-reg; */
                     margin: 0;
                     margin-bottom: 15px;
                 }

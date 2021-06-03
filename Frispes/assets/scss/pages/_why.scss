@@ -1,0 +1,45 @@
+.why {
+    padding: $section-pad;
+    &__content {
+        display: flex;
+        &__left,
+        &__right {
+            flex: 0 0 50%;
+        }
+        &__left {
+            color: $color-primary;
+            display: flex;
+            flex-wrap: wrap;
+            &__desc {
+                color: $color-ntrl-dk;
+            }
+            &__item {
+                position: relative;
+                padding-left: 60px;
+                flex: 0 0 50%;
+                margin: 25px 0;
+            }
+            &__icon {
+                position: absolute;
+                top: 9px;
+                left: 0;
+            }
+        }
+        &__right {
+            background-color: $color-primary;
+            color: $color-base;
+            padding: 53px 54px;
+            &_color,
+            &__text {
+                color: $color-base;
+                &::after {
+                    color: $color-base;
+                }
+            }
+            &__title {
+                color: $color-base;
+                margin: 10px 0;
+            }
+        }
+    }
+}

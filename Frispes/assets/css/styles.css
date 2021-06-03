@@ -381,6 +381,13 @@ template {
   margin: 0;
 }
 
+.title_secondary {
+  font-family: "Lora";
+  font-size: 3.2rem;
+  line-height: 1.28125;
+  font-weight: 400;
+}
+
 .text_secondary {
   font-weight: 500;
   font-size: 1.8rem;
@@ -763,10 +770,10 @@ ul {
 }
 
 .spaces .spaces__content .spaces__item__overlay__title {
-  font-family: "Lora";
-  font-size: 3.2rem;
-  line-height: 1.28125;
-  font-weight: 400;
+  /* font-family: $ff-lora;
+                    font-size: $fs-h3;
+                    @include lh_pxToNum(32, 41);
+                    font-weight: $fw-reg; */
   margin: 0;
   margin-bottom: 15px;
 }
@@ -830,4 +837,109 @@ ul {
 
 .spaces__count span.active {
   color: #222831;
+}
+
+.why {
+  padding: 60px 0;
+}
+
+.why__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.why__content__left, .why__content__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.why__content__left {
+  color: #10375C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.why__content__left__desc {
+  color: #6A6A6A;
+}
+
+.why__content__left__item {
+  position: relative;
+  padding-left: 60px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin: 25px 0;
+}
+
+.why__content__left__icon {
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.why__content__right {
+  background-color: #10375C;
+  color: #ffffff;
+  padding: 53px 54px;
+}
+
+.why__content__right_color, .why__content__right__text {
+  color: #ffffff;
+}
+
+.why__content__right_color::after, .why__content__right__text::after {
+  color: #ffffff;
+}
+
+.why__content__right__title {
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.facilities {
+  padding: 60px 0;
+}
+
+.facilities__header {
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.facilities__content {
+  padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.facilities__list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding-right: 50px;
+}
+
+.facilities__list__item {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222831;
+  padding: 24px;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  cursor: pointer;
+}
+
+.facilities__list__item:hover {
+  background-color: #FF5722;
+  color: #ffffff;
 }
