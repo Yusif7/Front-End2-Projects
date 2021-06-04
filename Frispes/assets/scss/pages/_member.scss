@@ -1,0 +1,40 @@
+.member {
+    background-color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &__desc {
+            padding: 110px 10px 110px 0;
+            flex: 0 0 40%;
+        }
+    }
+    &__uptitle,
+    &__title {
+        color: $color-base;
+    }
+    &__title {
+        margin: 16px 0;
+    }
+    &__uptitle::after {
+        content: '';
+        background-color: $color-base;
+    }
+    &__btn {
+        margin-top: 30px;
+    }
+    &__patern {
+        @include bg_img('/Frispes/assets/files/member/Pattern.png');
+        position: absolute;
+        width: 373px;
+        height: 489px;
+        right: 9%;
+        top: 20%;
+        z-index: 0;
+    }
+    &__photo {
+        position: relative;
+        z-index: 1;
+    }
+}

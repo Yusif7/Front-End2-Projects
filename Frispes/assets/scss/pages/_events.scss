@@ -1,0 +1,52 @@
+.events {
+    background-color: $color-base-lt;
+    padding: 60px 0 100px 0;
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        &__item {
+            position: relative;
+            &__overlay {
+                background-color: $color-base;
+                padding: 32px;
+                opacity: 0;
+                visibility: hidden;
+                transition: $transition;
+                &__title {
+                    font-family: $ff-lora;
+                    font-weight: $fw-bold;
+                    font-size: $fs-h3;
+                    @include lh_pxToNum(32, 41);
+                    color: $color-black-lt;
+                    margin-top: 0;
+                }
+                &__text {
+                    color: $color-ntrl-dk;
+                }
+            }
+            &:hover .events__content__item__overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        &__desc {
+            padding: 20px 15px;
+            background-color: $color-base;
+        }
+        &__title {
+            font-family: $ff-lora;
+            font-weight: $fw-reg;
+            font-size: $fs-h6;
+            @include lh_pxToNum(22, 28);
+            color: $color-black-lt;
+            margin: 0 0 8px 0;
+        }
+        &__person {
+            color: $color-ntrl-dk;
+        }
+    }
+}

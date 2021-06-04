@@ -1,0 +1,33 @@
+.footer {
+    background-color: $color-primary-dk;
+    padding: 52px 0 100px 0;
+    &__header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    &__title:nth-child(2) {
+        margin-left: 10px;
+    }
+    &__logo {
+        font-family: $ff-lora;
+        font-weight: $fw-bold;
+        font-size: $fs-h1;
+        @include lh_pxToNum(52, 67);
+    }
+    &__icons {
+        display: inline-block;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        &__item:nth-child(1),
+        &__item:nth-child(5) {
+            flex: 0 0 22%;
+        }
+        &__item ul li {
+            color: $color-base;
+        }
+    }
+}
