@@ -1,0 +1,57 @@
+.help {
+    padding: 90px 0 40px 0;
+    text-align: center;
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__btn {
+        color: $color-secondary;
+        &__icon {
+            transform: rotate( -90deg);
+            margin-left: 15px;
+        }
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        &__item {
+            position: relative;
+            padding: 40px 40px 60px 40px;
+            background: white;
+            box-shadow: 0px 0px 5px 5px rgba(223, 223, 223, 0.5);
+            margin-bottom: 60px;
+            color: $color-black-lt;
+            transition: $transition;
+            h4 {
+                font-family: $ff-lora;
+                font-size: $fs-h4;
+                @include lh_pxToNum(26, 33);
+                font-weight: $fw-reg;
+            }
+            &__box {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                width: 64px;
+                height: 48px;
+                background-color: $color-secondary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $color-base;
+                cursor: pointer;
+            }
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-base;
+            }
+            &:hover .help__content__item__box {
+                background-color: $color-base;
+                color: $color-secondary;
+                ;
+            }
+        }
+    }
+}
