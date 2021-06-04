@@ -17,6 +17,7 @@ body {
     font-size: $fs-sm;
     @include lh_pxToNum(16, 26);
     color: $color-base;
+    overflow-x: hidden;
 }
 
 .container {

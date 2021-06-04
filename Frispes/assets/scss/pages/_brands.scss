@@ -1,0 +1,13 @@
+.brands {
+    position: relative;
+    top: -150px;
+    text-align: center;
+    &__header {
+        margin-bottom: 60px;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
