@@ -132,10 +132,8 @@ document.querySelectorAll('.mainSlider__content__button')[1].addEventListener('c
     setTimeout(() => {
         mainSlider[num].style.opacity = 1;
     }, 700);
-
 })
 document.querySelectorAll('.mainSlider__content__button')[0].addEventListener('click', () => {
-
     start1 -= 1;
     if (start1 < 0) {
         start1 = mainSlider.length - 1;

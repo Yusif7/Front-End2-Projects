@@ -11,6 +11,105 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Sakai</title>
+    <style>
+        .testimonial {
+            height: 552px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        
+        .testimonial__container {
+            height: 252px;
+        }
+        
+        .testimonial__thumbs {
+            width: 126px;
+            height: 126px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .testimonial__thumbs__img {
+            width: 58px;
+            height: 58px;
+            background-color: #444853;
+            cursor: pointer;
+            transition: all 0.6s ease 0s;
+        }
+        
+        .testimonial__thumbs__img:hover {
+            background-color: var(--white);
+            transform: scale(1.1);
+            transition: all 0.6s ease 0s;
+        }
+        
+        .testimonial__content {
+            display: flex;
+        }
+        
+        .testimonial__info {
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .testimonial__info__text {
+            width: 915px;
+            font-size: 1.563rem;
+            font-weight: 200;
+            line-height: 2.188rem;
+            font-style: italic;
+            color: var(--white);
+            /* text-indent: 1.5rem; */
+            position: relative;
+            display: none;
+        }
+        
+        .testimonial__info__quote {
+            display: inline-block;
+            position: absolute;
+            top: -4px;
+            left: 30px;
+            font-size: 10px;
+            width: 9px;
+            height: 10px;
+        }
+        
+        .testimonial__info__author {
+            margin-top: 40px;
+        }
+        
+        .testimonial__info__author .author_name {
+            font-size: 1.563rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+            color: var(--white);
+            display: block;
+        }
+        
+        .testimonial__info__author .author_position {
+            line-height: 1.5rem;
+            color: rgb(47, 196, 43);
+            display: block;
+            padding: 10px 0;
+        }
+        
+        .testimonial__info__buttons {
+            position: absolute;
+            bottom: -28%;
+            left: 13%;
+        }
+        
+        .testimonial__info__button {
+            color: white;
+            font-size: 45px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
